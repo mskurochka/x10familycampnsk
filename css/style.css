@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: rgb(34, 34, 34);
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.5;
+
+}
+header {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px 100px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 50px;
+    }
+
+#burger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 100px;
+    gap: 30px;
+    background: rgb(34, 34, 34);
+    height: 100%;
+    box-shadow: 0px 0px 10px black;
+    transition: 1s;}
+
+#burger-menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}    
+.nav-main {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+}
+
+.nav-main a {
+    font-size: 30px;
+
+}
+
+
+button {
+    background: #888;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.burger-btn {
+    background: transparent;
+    padding: 0;
+    display: none;
+}
+
+.hero {
+    height: 981px;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 140px;
+}
+
+.hero-h {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    color: black;
+    font-weight: 900;
+    
+
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+.hero-date, .hero-location {
+    border: #888;
+    border-style: solid;
+    border-width: 2px;
+    background: transparent;
+    color: #888;
+    font-weight: 900;
+    cursor: auto;
+}
+
+.hero-date:hover, .hero-location:hover {
+    opacity: unset;
+
+}
+
+.hero button {
+    height: 100px;
+    padding: 20px;
+}
+
+.about-us {
+    margin: 100px auto;
+    padding: 30px;
+    padding-bottom: 70px;
+    max-width: 1080px;
+    line-height: 150%;
+    text-align: center;
+    line-height: 1.5;
+    border-bottom: 2px solid white;
+
+}
+
+h2 {
+    font-size: 80px;
+    color: #888;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
+    color: #888;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+.about-us p {
+    margin: 30px 0;
+    font-size: 30px;
+
+}
+
+.our-events {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 25px auto;
+    gap: 20px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+
+}
+
+.card-body {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+.card-body h4 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: none;
+
+}
+
+.contact {
+    max-width: 940px;
+    margin: 100px auto;
+    padding: 30px;
+    border-top: 1px solid white;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.contact-form-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.contact-form-field input {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.contact-form button {
+    width: 235;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card img {
+        height: 60vw;
+    }
+}
+
+footer {
+    border-top: 2px solid white;
+    padding: 60px;
+}
+
+.footer-body {
+    max-width: 1160px;
+    margin: 0 auto;
+    color: white;
+}
+
+.footer-body h4 {
+     margin-bottom: 15px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+
+}
+
+.footer-social-media img {
+    height: 50px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+     .burger-btn {
+        display: block;
+    }
+
+    .nav-main{
+        display: none;
+    }
+    
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero button {
+        width: max(50%, 300px);
+font-size: 10px;
+    }
+
+
+    .contact-form-field {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .contact-form {
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 30px;
+    }
+
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero{
+        height:400px
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .hero button {
+        width: max(30%, 150px);
+    }
+
+    .about-us p {
+        font-size: 16px;
+        margin: 0px 0px;
+        color: white;
+
+    }
+
+    
+
+        .our-events-book {
+        width: max(30%, 150px);
+        ;
+        font-size: 14px;
+    }
+}
